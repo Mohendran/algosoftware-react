@@ -47,7 +47,7 @@ export default function Home() {
     // But As per Requirement: Reset the ProgressBars and only update the selected Progress Bar
     const progressBars = progressBarData.map((progressBar, index) => {
       if (index === progressBarToUpdate - 1) {
-        return { value: progressBar.value + progressBarValue, color: `bg-${progressBarColor}-500` };
+        return { value: progressBarValue, color: `bg-${progressBarColor}-500` };
       } else {
         return { value: 0, color: 'bg-red-500' };
       }
