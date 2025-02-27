@@ -32,7 +32,7 @@ export default function Home() {
     }
   }
 
-  const applyProgress = (e: FormEvent<HTMLButtonElement>) => {
+  const applyProgress = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
     // UnComment If it the Progress Needs to be Persisted
